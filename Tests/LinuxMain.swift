@@ -1,6 +1,7 @@
 import XCTest
-@testable import ColorBashTests
 
-XCTMain([
-     testCase(ColorBashTests.allTests),
-])
+import ColorBashTests
+
+var tests = [XCTestCaseEntry]()
+tests += ColorBashTests.allTests()
+XCTMain(tests)
